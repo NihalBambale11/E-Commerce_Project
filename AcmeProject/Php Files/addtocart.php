@@ -14,8 +14,4 @@
        $_SESSION['cart']=$cart;
        header('location: client_view_product.php'); 
    }
-   
-
-   
-
 ?> 
