@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+      img{
+          width:80px;
+      }
+
+    </style>
+</head>
+<body>
+
+    <div id="root">
+
+
+    </div>
+    
+
+   <script>
+
+       rating=2;
+
+       sum='';
+       for(i=1;i<=5;i++){
+           if(i<=rating){
+               starsrc ='fillstar.png';
+           }
+           else{
+               starsrc='emptystar.png';
+           }
+           sum=sum +`<img src="${starsrc}">`;
+       }
+
+       ele=document.getElementById('root');
+
+       ele.innerHTML=sum;
+
+   </script>
+
+    
+</body>
+</html>
